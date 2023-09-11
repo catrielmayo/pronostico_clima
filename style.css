@@ -1,0 +1,52 @@
+body {
+    font-size: 62.5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: grid;
+}
+
+.container h1 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.input-container {
+    display: grid;
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.input-container input {
+    width: 70%;
+    margin: 0 auto 1rem auto;
+    padding: 0.6rem;
+    border: 1px solid #000;
+    border-radius: 0.3rem;
+}
+
+.input-container button {
+    padding: 0.6rem;
+    font-weight: bold;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    border-radius: 0.3rem;
+}
+
+@media (min-width: 425px) {
+    .container h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .container h1 {
+        font-size: 3rem;
+    }
+
+    .input-container {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
